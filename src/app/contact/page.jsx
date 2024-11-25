@@ -58,7 +58,7 @@ const Contact = () => {
               </SelectContent>
             </Select>
             <Textarea className="h-[200px]" placeholder="Type your message here"/>
-            <Button size="md" className="max-w-40">send message</Button>
+            <Button  className="max-w-40">send message</Button>
             </form>
         </div>
         {/* info */}
@@ -73,7 +73,7 @@ const Contact = () => {
                   <p className="text-white/60">
                     {item.title}
                   </p>
-                  <h3 className="text-xl">{}item.description</h3>
+                  <h3 className="text-xl">{item.description}</h3>
                 </div>
               </li>
             })}

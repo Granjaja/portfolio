@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import CountUp, {useCountUp} from "react-countup"
+import CountUp from "react-countup"
 
 const stats =[ 
     {
@@ -25,7 +25,6 @@ const stats =[
 
 const Stats = () => {
   return (
-    <div>
       <section className='pt-4 pb-12 xl:pt-0 xl:pb-0'>
         <div className='mx-auto container'>
             <div className='flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none'>
@@ -47,7 +46,6 @@ const Stats = () => {
             </div>
         </div>
       </section>
-    </div>
   )
 }
 
