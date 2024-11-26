@@ -9,30 +9,30 @@ import { motion } from "framer-motion"
 
 const about = {
   title:"About me",
-  decsription:"Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis",
+  description:"H, I'm Granvile, a passionate and detail oriented web developer with an aptitude for creating intuitive, responsive and visaully appealing websites. I focus on delivering seamless user experinces and scalble digital solutions.",
   info:[
     {
-    fieldName:"Name",
-    fieldValue:"Gran Karanja"
+    fieldName:"Name:",
+    fieldValue:"Granvile Karanja"
   },
   {
-    fieldName:"Phone",
+    fieldName:"Phone:",
     fieldValue:"+254 711 912 608"
   },
   {
-    fieldName:"Experience",
-    fieldValue:"12 Years"
+    fieldName:"Experience:",
+    fieldValue:"2 Years"
   },
   {
-    fieldName:"Nationality",
+    fieldName:"Nationality:",
     fieldValue:"Kenyan"
   },
   {
-    fieldName:"Email",
+    fieldName:"Email:",
     fieldValue:"granvilekaranja@gmail.com"
   },
   {
-    fieldName:"Freelance",
+    fieldName:"Freelance:",
     fieldValue:"Available"
   },
 ]
@@ -40,25 +40,33 @@ const about = {
 
 const experience ={
   icon:"/assets/freepik__upload__41585.jpeg",
-  title:"My experience",
-  description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+  title:"My Experience",
+  description:"My experience spans diverse range of products from crafting sleek websites to robust and dynamic web applications.",
   items:[
-    {company:"Tech Solutions Inc.",
-    positions: "Full Stack Developer",
-    duration:"2022-present"
+    {company:"Freelance",
+    position: "Full Stack Developer",
+    duration:"2024-present"
     },
-    {company:"Web Design Studio",
-      positions: "Front End Developer Intern",
-      duration:"Summer 2021"
+    {company:"WriterAcess",
+      position: "Content Writer",
+      duration:"2022-present"
       },
-      {company:"Ecommerce Start Up",
-        positions: "Freelance Web Developer",
-        duration:"2020-2021"
+      {company:".",
+        position: "Freelance Writer",
+        duration:"2017-present"
         },
-        {company:"Ecommerce Start Up",
-          positions: "Freelance Web Developer",
-          duration:"2020-2021"
-          }
+    // {company:"Web Design Studio",
+    //   position: "Front End Developer Intern",
+    //   duration:"Summer 2021"
+    //   },
+    //   {company:"Ecommerce Start Up",
+    //     position: "Freelance Web Developer",
+    //     duration:"2020-2021"
+    //     },
+    //     {company:"Ecommerce Start Up",
+    //       position: "Freelance Web Developer",
+    //       duration:"2020-2021"
+    //       }
   ]
 
 }
@@ -66,18 +74,22 @@ const experience ={
 const education ={
   icon:"/assets/freepik__upload__41585.jpeg",
   title:"My education",
-  description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ",
+  description:"I have a solid foundation in web development and stastitics complemented by contionus learning. My education has imparted me with skills to build both front end and back end systems, problem solving abilities and understanding of user centered design.",
   items:[
-    {institution:"UOE.",
-    positions: "Full Stack Web Development Bootcamp",
-    duration:"2022-present"
+    {institution:"University of Eldoret",
+    degree: "Applied Statistics With Computing",
+    duration:"2013 - 2017"
     },
-    {company:"Udemy",
-      positions: "Front End Track",
+    {institution:"Udemy",
+      degree: "100 Days of Code: The Complete Python Pro Bootcamp",
       duration:" 2024"
       },
-      {company:"Udemy",
-        positions: "Python Bootcamp",
+      {institution:"Udemy",
+        degree: "The Complete 2024 Web Development Bootcamp",
+        duration:" 2024"
+        },  
+      {institution:"Udemy",
+        degree: "The Complete Copywriting Course: Write to Sell Like a Pro",
         duration:" 2024"
         },
   ]
@@ -85,7 +97,7 @@ const education ={
 
 const skills ={
   title:"My skills",
-  description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+  description:"I am committed to enhance my skills through online courses and practical hands on experience in the dynamic web development field ",
   skillList:[
     {
     icon:<FaHtml5/>,
@@ -146,12 +158,12 @@ const Resume = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">{experience.items.map((item, index) =>{
                     return <li key={index}
-                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-2"
                     >
                       <span className="text-accent">{item.duration}</span>
-                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                      <h3 className="text-xl max-w-[260px] min-h-[40px] text-center lg:text-left">{item.position}</h3>
                       <div className="flex items-center gap-3">
-                        <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                        <span className="w-[6px] h-[6px] rounded-full bg-accent">.</span>
                         <p className="text-white/60">{item.company}</p>
                       </div>
                     </li>
@@ -168,7 +180,7 @@ const Resume = () => {
                 <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">{education.items.map((item, index) =>{
                     return <li key={index}
-                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-5"
                     >
                       <span className="text-accent">{item.duration}</span>
                       <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.degree}</h3>
@@ -217,13 +229,13 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">
                   {about.title}
                 </h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0 my-5">
                   {about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px]">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-x-10 max-w-[620px]">
                   {about.info.map((item, index) => {
                     return (
-                      <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                      <li key={index} className="flex items-center justify-center xl:justify-start gap-2">
                         <span className="text-white/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>

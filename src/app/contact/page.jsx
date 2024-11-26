@@ -36,29 +36,28 @@ const Contact = () => {
         <div className="xl:w-[54%] order-2 xl:order-none">
           <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
             <h3 className="text-4xl text-accent">Let's work together</h3>
-            <p className="text-white/60">Donec nec neque et just dignissim facilisis quis ac sem. Curabitur ullamcorper varius velit imperdiet maximus.</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
-              <input type="firstname" placeholder="Firstname"/>
-              <input type="lastname" placeholder="Lastname"/>
-              <input type="email" placeholder="Email address"/>
-              <input type="phone" placeholder="Phone number"/>
+            <p className="text-white/60">Don't hesitate to shoot me a message, I'll respond immediately.</p>
+            <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
+              <Input type="firstname" placeholder="Firstname"/>
+              <Input type="lastname" placeholder="Lastname"/>
+              <Input type="email" placeholder="Email address"/>
+              <Input type="phone" placeholder="Phone number"/>
             </div>
             <Select>
               <SelectTrigger className="w-full">
-                <SelectValue placeholder="select a service"/>
+                <SelectValue placeholder="Select a service"/>
               </SelectTrigger>
               <SelectContent>
                 <SelectGroup>
                   <SelectLabel>Select a service</SelectLabel>
-                  <SelectItem>Web Development</SelectItem>
-                  <SelectItem>UI/UX Design</SelectItem>
-                  <SelectItem>Logo Design</SelectItem>
-                  <SelectItem>Web Development</SelectItem>
+                  <SelectItem value="est">Web Development</SelectItem>
+                  <SelectItem value="est">UI/UX Design</SelectItem>
+                  <SelectItem value="est">Logo Design</SelectItem>
                 </SelectGroup>
               </SelectContent>
             </Select>
             <Textarea className="h-[200px]" placeholder="Type your message here"/>
-            <Button  className="max-w-40">send message</Button>
+            <Button className="max-w-40">send message</Button>
             </form>
         </div>
         {/* info */}

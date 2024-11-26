@@ -8,26 +8,26 @@ import { motion } from "framer-motion"
 
 const services = [{
   num:"01",
-  title:"Web development",
-  description:"Nam libero tempore, cum soluta nobis est electio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
+  title:"Web Development",
+  description:"Get a custom website with tailored solution for your business and optimized performance for seamless user experience.",
   href:""
 },
 {
   num:"02",
-  title:"Web development",
-  description:"Nam libero tempore, cum soluta nobis est electio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
+  title:"UI/UX Design",
+  description:"Crafting intuitive and engaging user experiences that blend aesthetics with functionality to ensure you get a responsive design that looks good in all devices.",
   href:""
 },
 {
   num:"03",
-  title:"Web development",
-  description:"Nam libero tempore, cum soluta nobis est electio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
+  title:"Copywriting",
+  description:"Creating compelling, results-driven copy that captures attention and communicates your brand's story.",
   href:""
 },
 {
   num:"04",
-  title:"Web development",
-  description:"Nam libero tempore, cum soluta nobis est electio cumque nihil impedit quo minus id quod maxime placeat facere possimus",
+  title:"Python and Data tasks",
+  description:"Leveraging Python to automate tasks, analyze data, and deliver actionable insights through clean, efficient code.",
   href:""
 }
 ]

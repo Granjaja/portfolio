@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialia`}
+        className={`${geistSans.variable} ${geistMono.variable} antialia my-3 mx-7`}
       >
         <Header/>
         <StairTransition/>

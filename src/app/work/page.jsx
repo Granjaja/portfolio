@@ -13,34 +13,36 @@ import WorkSliderBtns from "@/components/WorkSliderBtns"
 const projects = [
   {
     num:"01",
-    category:"frontend",
+    category:"fullstack",
     title:"project 1",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack:[{name:"HTML 5"}, {name:"Css 3"}, {name:"Javascript"}],
-    image:"/assets/work/thumb1.png",
-     live:"",
-    github:""
+    description:"Recipe book project with front end and back end.",
+    stack:[{name:"Next.js"}, {name:"Tailwind Css"}, {name:"Node.js"}],
+    image:"/assets/work/recipebook.png",
+    live:"https://recipe-book-two-delta.vercel.app/",
+    github:"https://github.com/Granjaja/Recipe-book"
+
+    
 
   },
   {
     num:"02",
-    category:"fullstack",
+    category:"frontend",
     title:"project 2",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack:[{name:"Next.js"}, {name:"Tailwind Css"}, {name:"Node.js"}],
-    image:"/assets/work/thumb2.png",
-    live:"",
-    github:""
+    description:"Portfolio website with creative design and animation using Motion.",
+    stack:[{name:"HTML 5"}, {name:"Css 3"}, {name:"Javascript"}],
+    image:"/assets/work/frontend.png",
+     live:"https://vercel.com/grans-projects-b9234d37/portfolio",
+    github:"https://github.com/Granjaja/nextjs-portfolio"
   },
   {
     num:"03",
     category:"frontend",
     title:"project 3",
-    description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:"A trading website educational blogs and input from users.",
     stack:[{name:"Next.js"}, {name:"Tailwind Css"}], 
-    image:"/assets/work/thumb3.png",
-    live:"",
-    github:""
+    image:"/assets/work/trading.png",
+    live:"https://vercel.com/grans-projects-b9234d37/trading",
+    github:"https://github.com/Granjaja/trading"
   },
 ]
 
@@ -104,13 +106,13 @@ const Work = () => {
             >
               {projects.map((project, index) =>{
                 return (<SwiperSlide key={index} className="w-full">
-                  <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                  <div className="h-[460px] relative group flex justify-center items-center">
                   <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                   <div className="relative w-full h-full">
                     <Image
                     src={project.image}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     alt=""
                     />
                   </div>
