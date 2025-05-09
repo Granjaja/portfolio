@@ -14,8 +14,21 @@ const projects = [
   {
     num:"01",
     category:"fullstack",
-    title:"project 1",
-    description:"Recipe book project with front end and back end.",
+    title:"project 1: apicalhz",
+    description:".",
+    stack:[{name:"Next.js"}, {name:"Tailwind Css"}, {name:"Node.js"}, {name:"Typescript"}, {name:"Postgres"}],
+    image:"/assets/work/apicalhz.png",
+    live:"https://apicalhz.com/",
+    github:"https://github.com/Granjaja/hitkali-headset-site"
+
+    
+
+  },
+  {
+    num:"02",
+    category:"fullstack",
+    title:"project 2",
+    description:"Simple recipe book project with front end and back end.",
     stack:[{name:"Next.js"}, {name:"Tailwind Css"}, {name:"Node.js"}],
     image:"/assets/work/recipebook.png",
     live:"https://recipe-book-two-delta.vercel.app/",
@@ -25,9 +38,9 @@ const projects = [
 
   },
   {
-    num:"02",
+    num:"03",
     category:"frontend",
-    title:"project 2",
+    title:"project 3",
     description:"Portfolio website with creative design and animation using Motion.",
     stack:[{name:"HTML 5"}, {name:"Css 3"}, {name:"Javascript"}],
     image:"/assets/work/frontend.png",
@@ -35,15 +48,24 @@ const projects = [
     github:"https://github.com/Granjaja/nextjs-portfolio"
   },
   {
-    num:"03",
+    num:"04",
     category:"frontend",
-    title:"project 3",
+    title:"project 4",
     description:"A trading website educational blogs and input from users.",
     stack:[{name:"Next.js"}, {name:"Tailwind Css"}], 
     image:"/assets/work/trading.png",
     live:"https://vercel.com/grans-projects-b9234d37/trading",
     github:"https://github.com/Granjaja/trading"
   },
+  {
+    num:"04",
+    category:"backend",
+    title:"Swifte",
+    description:"A tailoring website.",
+    stack:[{name:"express.js"}],
+  }
+    
+
 ]
 
 const Work = () => {
