@@ -15,7 +15,7 @@ const projects = [
     num:"01",
     category:"fullstack",
     title:"project 1: apicalhz",
-    description:".",
+    description:"Full stack E-commerce for audio devices built using nextjs and deployed on digital ocean using docker images.",
     stack:[{name:"Next.js"}, {name:"Tailwind Css"}, {name:"Node.js"}, {name:"Typescript"}, {name:"Postgres"}],
     image:"/assets/work/apicalhz.png",
     live:"https://apicalhz.com/",
